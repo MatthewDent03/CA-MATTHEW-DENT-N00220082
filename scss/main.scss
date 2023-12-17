@@ -1,0 +1,150 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: rgb(239, 248, 248);
+
+$lighter-red: #fc6666; 
+
+$lighter-orange: #fc9166;
+
+$display-font-family: Montserrat;
+
+$body-font-family: 'IBM Plex Sans', sans-serif;
+
+.text-lighter-orange {
+  color: $lighter-orange;
+}
+
+.text-lighter-red {
+    color: $lighter-red;
+}
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+header {
+    background-image: url('../images/Header\ Section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.outlined-text {
+  -webkit-text-stroke: 2px black;
+}
+
+
+.position-relative {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-icon img {
+    margin-left: 12px; 
+    width: 25px;
+  }
+  
+  .nav-icon {
+    display: flex;
+    filter: grayscale(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  }
+  
+  .nav-icon img {
+    margin-left: 15px; 
+    margin-right: 10px;
+    width: 35px;
+  }
+
+  .nav-icon2 {
+    display: flex;
+  }
+  
+  .nav-icon2 img {
+    margin-left: 15px; 
+    margin-right: 10px;
+    width: 35px;
+  }
+
+  .footer-icon {
+    display: flex;
+  }
+  
+  .footer-icon img {
+    margin-left: 20px; 
+    width: 125px;
+  }
+
+  .footer-icon2 img {
+    margin-left: 20px; 
+    width: 125px;
+    filter: grayscale(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  }
+
+  .menu-item {
+    .active {
+      color: #ffc107;
+    }
+  }
+  
+  .menu-item {
+    :hover {
+      color: #ffc107;
+    }
+  }
+  
+  .card:hover {
+    background-color: #ffc107; 
+    color: #ffffff; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.card:hover {
+  background-color: #ffc107; 
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  &-no-hover {
+      &:hover {
+          background-color: transparent;
+          color: inherit;
+      }
+  }
+}
+
+.card {
+  &-no-hover-all {
+      &:hover {
+          background-color: $lighter-orange;
+          color: inherit;
+      }
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+

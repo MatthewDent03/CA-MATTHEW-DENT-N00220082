@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <header #="top">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light opacity-75 pt-0 pb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="footer-icon2"><img src="images/footer-logo.png" alt="Bootstrap"></span>
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="index.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="index.html">Order Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="index.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="index.html">Location</a>
+                        </li>
+                    </ul>
+
+                    <span class="nav-icon2"><img src="images/basket.jpg" alt="Bootstrap"></span>
+                    <span class="nav-icon2"><img src="images/search.png" alt="Bootstrap"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="container d-flex justify-content-center mt-5 pt-5">
+            <div class="col-md-6 text-center">
+                <p class="display-1 fw-semibold text-warning my-2">Our Menu</p>
+                <p class="fs-5 my-2">We consider all the drivers of change gives you the components you need to change
+                    to create a truly happens.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-1"><span></span></div>
+                <div class="col-12 col-md-10 text-center">
+                    <div class="btn-group btn-group-lg my-5 d-flex flex-wrap" role="group"
+                        aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-warning p-3 flex-grow-1 mx-2 my-2 rounded"
+                            for="btnradio1">Breakfast</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-warning p-3 flex-grow-1 mx-2 my-2 rounded"
+                            for="btnradio2">Lunch</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-warning p-3 flex-grow-1 mx-2 my-2 rounded"
+                            for="btnradio3">Dinner</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-warning p-3 flex-grow-1 mx-2 my-2 rounded"
+                            for="btnradio4">Dessert</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                        <label class="btn btn-outline-warning p-3 flex-grow-1 mx-2 my-2 rounded"
+                            for="btnradio5">Shake</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1"><span></span></div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-4 my-3 g-4 my-2">
+                <div class="col">
+                    <a href="product.html" class="card-link">
+                        <div class="card h-100" data-page="product">
+                            <img src="images/LB Image.png" class="card-img-top" alt="Image 1">
+                            <div class="card-body">
+                                <h5 class="card-title">€9.50</h5>
+                                <h6 class="card-name">Lemon Pancakes</h6>
+                                <p class="card-text">Made with mozzarella cheese, egg. peppers and taco sauce</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product2.html" class="card-link">
+                        <div class="card h-100" data-page="product2">
+                            <img src="images/LT Image.png" class="card-img-top" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title">€7.99</h5>
+                                <h6 class="card-name">Pulled Pork Melt</h6>
+                                <p class="card-text">Made with eggs, chickpeas, tomatoes, oil and other ingredients</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product3.html" class="card-link">
+                        <div class="card h-100" data-page="product3">
+                            <img src="images/MLTImage.png" class="card-img-top" alt="Image 3">
+                            <div class="card-body">
+                                <h5 class="card-title">€4.95</h5>
+                                <h6 class="card-name">Falafel Salad</h6>
+                                <p class="card-text">Made with eggs, lettuce, salt, oil and other ingredients</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product4.html" class="card-link">
+                        <div class="card h-100" data-page="product4">
+                            <img src="images/RT Image.png" class="card-img-top" alt="Image 4">
+                            <div class="card-body">
+                                <h5 class="card-title">€17.99</h5>
+                                <h6 class="card-name">Cajun Toastie</h6>
+                                <p class="card-text">Made with eggs, lemon, sugar and other ingredients</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product5.html" class="card-link">
+                        <div class="card h-100" data-page="product5">
+                            <img src="images/RB Image.png" class="card-img-top" alt="Image 5">
+                            <div class="card-body">
+                                <h5 class="card-title">€9.55</h5>
+                                <h6 class="card-name">Iced Coffee</h6>
+                                <p class="card-text">Made with eggs, cocoa, salt, oil and other ingredients</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product6.html" class="card-link">
+                        <div class="card h-100" data-page="product6">
+                            <img src="images/MLB Image.png" class="card-img-top" alt="Image 6">
+                            <div class="card-body">
+                                <h5 class="card-title">€12.99</h5>
+                                <h6 class="card-name">Steak Cheese Stack</h6>
+                                <p class="card-text">Made with eggs, lettuce, pepper, oil and other ingredients</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product7.html" class="card-link">
+                        <div class="card h-100" data-page="product7">
+                            <img src="images/MRB Image.png" class="card-img-top" alt="Image 7">
+                            <div class="card-body">
+                                <h5 class="card-title">€5.99</h5>
+                                <h6 class="card-name">Fudge Tart</h6>
+                                <p class="card-text">Made with milk, ice, syrup and hazelnuts</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="product8.html" class="card-link">
+                        <div class="card h-100" data-page="product8">
+                            <img src="images/halfSandwich.jpg" class="card-img-top" alt="Image 8">
+                            <div class="card-body">
+                                <h5 class="card-title">€9.99</h5>
+                                <h6 class="card-name">Nduja</h6>
+                                <p class="card-text">Made with mozzarella cheese, egg. peppers and taco sauce</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid bg-primary my-5 p-5">
+            <div class="container col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="display-5 fw-semibold text-center py-3 mb-5">
+                            <p class="text-lighter-orange">Steps To Order Online</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mt-3 py-1 h-100">
+                                <div class="card mb-4 pt-3 border-0 card-no-hover">
+                                    <span class="card-icon-location mx-auto">
+                                        <img src="images/location.png" class="img-fluid" alt="..."
+                                            style="width:150px;height:150px;" />
+                                    </span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Select Location</h5>
+                                        <p class="card-text">Choose the location where your food will be delivered</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3 py-1 h-100">
+                                <div class="card mb-4 pt-3 border-0 card-no-hover">
+                                    <span class="card-icon-order mx-auto"><img src="images/ipad.png" class="img-fluid"
+                                            alt="..." style="width:150px;height:150px;" /></span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Choose Order</h5>
+                                        <p class="card-text">Check over hundreds of menus to pick your favourite food
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3 py-1 h-100">
+                                <div class="card mb-4 pt-3 border-0 card-no-hover">
+                                    <span class="card-icon-pay mx-auto"><img src="images/bills.png" class="img-fluid"
+                                            alt="..." style="width:150px;height:150px;" /></span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pay Advanced</h5>
+                                        <p class="card-text">It's quick, safe, and simple! Select several methods of
+                                            payment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-3 py-1 h-100">
+                                <div class="card mb-4 pt-3 border-0 card-no-hover">
+                                    <span class="card-icon-meals mx-auto"><img src="images/meals.png" class="img-fluid"
+                                            alt="..." style="width:200px;height:150px;" /></span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Enjoy Meals</h5>
+                                        <p class="card-text">Food is made and delivered directly to your home</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-xl">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 p-0">
+                                <img src="images/sandwich.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-md-1">
+                                <span></span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex text-dark fw-semibold p-2">
+                                    <ul class="list-unstyled">
+                                        <li class="display-5 fw-semibold">Breakfast Menu</li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">530Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">670Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">420Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">230Kcal</li>
+                                        <hr class="my-3">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-xl">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 p-0">
+                                <img src="images/sandwich.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-md-1">
+                                <span></span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex text-dark fw-semibold p-2">
+                                    <ul class="list-unstyled">
+                                        <li class="display-5 fw-semibold">Lunch Menu</li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">530Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">670Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">420Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">230Kcal</li>
+                                        <hr class="my-3">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-xl">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 p-0">
+                                <img src="images/sandwich.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-md-1">
+                                <span></span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex text-dark fw-semibold p-2">
+                                    <ul class="list-unstyled">
+                                        <li class="display-5 fw-semibold">Dinner Menu</li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">530Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">670Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">420Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">230Kcal</li>
+                                        <hr class="my-3">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-xl">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 p-0">
+                                <img src="images/sandwich.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-md-1">
+                                <span></span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex text-dark fw-semibold p-2">
+                                    <ul class="list-unstyled">
+                                        <li class="display-5 fw-semibold">Dessert Menu</li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">530Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">670Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">420Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">230Kcal</li>
+                                        <hr class="my-3">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-xl">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 p-0">
+                                <img src="images/sandwich.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-md-1">
+                                <span></span>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex text-dark fw-semibold p-2">
+                                    <ul class="list-unstyled">
+                                        <li class="display-5 fw-semibold">Shakes Menu</li>
+                                        <li class="d-flex align-items-center mt-4">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">530Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">670Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">420Kcal</li>
+                                        <hr class="my-3">
+
+                                        <li class="d-flex align-items-center mt-3">
+                                            <div class="list-item fw-bold">Smoked Potato Salad</div>
+                                        </li>
+                                        <li class="my-3">This is served with lentils and carrots with potato gratin and
+                                            herbs</li>
+                                        <li class="mx-0 price-box  fw-light text-lighter-red">230Kcal</li>
+                                        <hr class="my-3">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark p-4" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark p-4" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+    </main>
+
+
+    <div class="container-fluid bg-dark">
+        <footer class="row justify-content-center mt-5">
+            <div class="col-md-12 mb-2 mt-5">
+                <ul
+                    class="list-unstyled text-center text-light fs-4 fw-semibold d-flex justify-content-center flex-wrap">
+                    <li class="mx-3">Our Menu</li>
+                    <li class="mx-3">Locations</li>
+                    <li class="mx-3">Talk to us</li>
+                </ul>
+            </div>
+            <div class="col-md-12 mb-4">
+                <ul
+                    class="list-unstyled text-center text-light fs-4 fw-semibold d-flex justify-content-center flex-wrap">
+                    <li class="mx-3">What's New</li>
+                    <li class="mx-3"><a href="index.html" class="text-warning text-decoration-none">Catering</a></li>
+                    <li class="mx-3">Franchises</li>
+                </ul>
+            </div>
+            <div class="col-md-12 mb-5">
+                <ul class="list-unstyled text-center text-light fw-light d-flex justify-content-center flex-wrap">
+                    <li class="mx-3">Cookie Policy</li>
+                    <li class="mx-3">Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-5 pb-3">
+                <div class="d-flex justify-content-center">
+                    <img src="images/footer-logo.png" alt="Footer Logo" class="img-fluid max-width-100 height-auto">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

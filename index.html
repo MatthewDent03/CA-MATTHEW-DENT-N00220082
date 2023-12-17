@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link
+			rel="stylesheet"
+			href="css/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<header #="top">
+			<div class="bg-img">
+				<nav class="navbar fixed-top navbar-expand-lg bg-dark opacity-75 pt-0 pb-0">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">
+							<span class="footer-icon"><img src="images/footer-logo.png" alt="Bootstrap"></span>
+						</a>
+						<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+								<li class="nav-item">
+									<a class="nav-link active text-warning" aria-current="page" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href="index.html">About Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href="menu.html">Menu</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href="index.html">Order Now</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href="index.html">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-warning" href="index.html">Location</a>
+								</li>
+							</ul>
+				
+							<span class="nav-icon"><img src="images/basket.jpg" alt="Bootstrap"></span>
+							<span class="nav-icon"><img src="images/search.png" alt="Bootstrap"></span>
+						</div>
+					</div>
+				</nav>
+				
+				
+				
+				<div class="container-fluid bg-image text-light py-5">
+					<div class="container-xl">
+						<div class="row vh-50 d-flex align-items-center">
+							<div class="col-md-6 py-5">
+								<h1 class="outlined-text fw-bold text-warning lh-1 display-1 py-5">
+									Welcome To Our Cuisine Restaurant
+								</h1>
+								<form class="d-flex py-4" role="search">
+									<div class="col-md-7 mx-2">
+										<input class="form-control form-control-lg me-2" type="search" placeholder="Search..." aria-label="Search">
+									</div>
+									<button class="btn btn-warning btn-outline-warning text-dark btn-lg col-md-3 px-3" type="submit">
+										<span class="btn-icon">Location<img src="images/search.png" alt="Bootstrap"></span>
+									</button>
+								</form>
+								<div class="d-flex text-warning py-3 list-unstyled">
+									<li>								
+										<div class="dropdown mx-2">
+											<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+												Login
+											</button>
+											<form class="dropdown-menu text-dark bg-warning p-4">
+												<div class="mb-3">
+													<label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+													<input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="example@gmail.com">
+												</div>
+												<div class="mb-3">
+													<label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+													<input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Example123">
+												</div>
+												<div class="mb-3">
+													<div class="form-check">
+														<input type="checkbox" class="form-check-input" id="dropdownCheck2">
+														<label class="form-check-label" for="dropdownCheck2">
+															Remember Info
+														</label>
+													</div>
+												</div>
+												<button type="submit" class="btn btn-primary">Search</button>
+											</form>
+									</div></li>
+									<li>								<button type="button" class="btn btn-success text-dark fw-semibold" id="liveToastBtn">Live Delivery Queue Time</button>
+
+										<div class="toast-container position-fixed bottom-0 end-0 p-3">
+										<div id="liveToast" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+											<div class="toast-header">
+											<img src="images/DeliveryIcon.png" class="rounded me-2" alt="..." style="width: 20%;">
+											<strong class="me-auto text-dark">Delivery Wait</strong>
+											<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+											</div>
+											<div class="toast-body text-light">
+											It will be a 25 minute wait for delivery
+											</div>
+										</div>
+										</div>
+		
+										<script>
+										document.getElementById('liveToastBtn').addEventListener('click', function () {
+											var liveToast = new bootstrap.Toast(document.getElementById('liveToast'));
+											liveToast.show();
+										});
+										</script></li>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+
+
+		<main id="#main">
+			<div class="container-xl">
+				<div class="row d-flex align-items-center">
+					<div class="col-md-1">
+						<span></span>
+					</div>
+					<div class="col-md-5">
+						<p class="text-uppercase fw-bold fs-6 text-secondary">
+							<small>R E V I E W</small>
+						</p>
+						<h1 class="fw-bold lh-1 display-5 my-4 text-success">
+							The Food's Masters Say About Us
+						</h1>
+						<h4>“Best restaurant that I used to experience!”</h4>
+						<p class="fw-semibold text-secondary">
+							I would like to share my thoughts on the dining experience I had at this restaurant. Let me provide you with my review of this restaurant and the overall experience I had there.
+						</p>
+						<h6>Joe Bastianach<small> - Winner Master Chef 2016</small></h6>
+						<i class="fas fa-search"></i><i class="fas fa-search"></i>
+					</div>
+					<div class="col-md-5">
+						<img src="images/chef.png" class="img-fluid" lt="" />
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="container-fluid bg-primary">
+				<div class="container-xl p-5">
+					<div class="row d-flex">
+						<div class="col-md-6">
+							<div class="row ">
+								<div class="col-md-5 py-1 h-100 d-flex align-items-center justify-content-center">
+									<div class="card mb-4 pt-3 border-0">
+										<span class="card-icon text-center">
+											<img src="images/PhoneIcon.png" class="img-fluid" alt="..." style="width:75px;height:75px;"/>
+										</span>
+										<div class="card-body">
+											<h5 class="card-title">Online Order</h5>
+											<p class="card-text">Our assistance is at your disposal</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 py-1 h-100 d-flex align-items-center justify-content-center">
+									<div class="card mb-4 pt-3 border-0">
+										<span class="card-icon text-center"><img src="images/DeliveryIcon.png" class="img-fluid" alt="..." style="width:75px;height:75px;"/></span>
+										<div class="card-body">
+											<h5 class="card-title">Online Order</h5>
+											<p class="card-text">Our assistance is at your disposal</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 py-1 h-100 d-flex align-items-center justify-content-center">
+									<div class="card mb-4 pt-3 border-0">
+										<span class="card-icon text-center"><img src="images/BasketIcon.png" class="img-fluid" alt="..." style="width:75px;height:75px;"/></span>
+										<div class="card-body">
+											<h5 class="card-title">Online Order</h5>
+											<p class="card-text">Our assistance is at your disposal</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 py-1 h-100 d-flex align-items-center justify-content-center">
+									<div class="card mb-4 pt-3 border-0">
+										<span class="card-icon text-center"><img src="images/24hrIcon.png" class="img-fluid" alt="..." style="width:75px;height:75px;"/></span>
+										<div class="card-body">
+											<h5 class="card-title">Online Order</h5>
+											<p class="card-text">Our assistance is at your disposal</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="col-md-12">
+							  <h1 class="fw-bold lh-1 display-5 my-5">
+								The Food's Masters Say About Us
+							  </h1>
+							  <p class="fw-semibold text-secondary">
+								I would like to share my thoughts on the dining experience I had at this restaurant. Let me provide you with my review of this restaurant and the overall experience I had there.
+							  </p>
+							  <a href="index.html" class="btn btn-warning btn-outline-warning text-dark fw-semibold btn-lg col-5">About Us</a>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+			
+
+
+
+			<div class="container-fluid p-0">
+				<img src="images/Group 5.png" class="img-fluid"/>
+			</div>
+
+
+			<div class="container-lg py-5">
+				<div
+					class="row justify-content-md-center align-content-centre justify-content-sm-start my-5"
+				>
+				<div class="col-12">
+					<p class="text-md-center text-dark text-uppercase fw-bold fs-6">
+						<small>Order Online Now</small>
+					</p>
+					<h1 class="fw-bold text-center lh-1 display-4">
+						Our Speciality Cuisine
+					</h1>
+					<div class="d-flex flex-wrap justify-content-center align-items-center pt-4 pb-4">
+						<div class="menu-item text-center mx-3 my-3">
+							<img src="images/breakfast.png" class="img-fluid mb-2" style="width: 65px; height: 65px;" />
+							<button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+								<div class="fs-4">Breakfast</div>
+							</button>
+						</div>
+				
+						<div class="menu-item text-center mx-3 my-3">
+							<img src="images/burrito.png" class="img-fluid mb-2" style="width: 65px; height: 65px;" />
+							<button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+								<div class="fs-4">Lunch</div>
+							</button>
+						</div>
+				
+						<div class="menu-item text-center mx-3 my-3">
+							<img src="images/dinner5.png" class="img-fluid mb-2" style="width: 65px; height: 65px;" />
+							<button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+								<div class="fs-4">Dinner</div>
+							</button>
+						</div>
+				
+						<div class="menu-item text-center mx-3 my-3">
+							<img src="images/dessert5.png" class="img-fluid mb-2" style="width: 65px; height: 65px;" />
+							<button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+								<div class="fs-4">Dessert</div>
+							</button>
+						</div>
+				
+						<div class="menu-item text-center mx-3 my-3">
+							<img src="images/milkshake.png" class="img-fluid mb-2" style="width: 65px; height: 65px;" />
+							<button class="btn btn-warning btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample4">
+								<div class="fs-4">Shake</div>
+							</button>
+						</div>
+					</div>
+				</div>
+					<div class="collapse collapse-horizontal" id="collapseWidthExample">
+						<div class="container-lg">
+							<div class="row d-flex align-items-center bg-dark">
+								<div class="col-md-1"></div>
+								<div class="col-md-4">
+									<p class="fw-semibold text-light lh-5 font-monospace fs-4">
+										The Ham & Cheesus
+										€9.95
+										Shredded Glazed ham, smoked cheddar, red cheddar. parmesan bechamel. colemans dressing. Served on granary sourdough with a side of crisps
+									</p>
+								</div>
+								<div class="col-md-1"></div>
+									<div class="col-md-6 px-0">
+										<img src="images/brekkie.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collapse collapse-horizontal" id="collapseWidthExample1">
+						<div class="container-lg">
+							<div class="row d-flex align-items-center bg-dark">
+								<div class="col-md-1"></div>
+								<div class="col-md-4">
+									<p class="fw-semibold text-light lh-5 font-monospace fs-4">
+										The Ham & Cheesus
+										€9.95
+										Shredded Glazed ham, smoked cheddar, red cheddar. parmesan bechamel. colemans dressing. Served on granary sourdough with a side of crisps
+									</p>
+								</div>
+								<div class="col-md-1"></div>
+									<div class="col-md-6 px-0">
+										<img src="images/lunch.webp" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collapse collapse-horizontal" id="collapseWidthExample2">
+						<div class="container-lg">
+							<div class="row d-flex align-items-center bg-dark">
+								<div class="col-md-1"></div>
+								<div class="col-md-4">
+									<p class="fw-semibold text-light lh-5 font-monospace fs-4">
+										The Ham & Cheesus
+										€9.95
+										Shredded Glazed ham, smoked cheddar, red cheddar. parmesan bechamel. colemans dressing. Served on granary sourdough with a side of crisps
+									</p>
+								</div>
+								<div class="col-md-1"></div>
+									<div class="col-md-6 px-0">
+										<img src="images/LB Image.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collapse collapse-horizontal" id="collapseWidthExample3">
+						<div class="container-lg">
+							<div class="row d-flex align-items-center bg-dark">
+								<div class="col-md-1"></div>
+								<div class="col-md-4">
+									<p class="fw-semibold text-light lh-5 font-monospace fs-4">
+										The Ham & Cheesus
+										€9.95
+										Shredded Glazed ham, smoked cheddar, red cheddar. parmesan bechamel. colemans dressing. Served on granary sourdough with a side of crisps
+									</p>
+								</div>
+								<div class="col-md-1"></div>
+									<div class="col-md-6 px-0">
+										<img src="images/dessert2.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collapse collapse-horizontal" id="collapseWidthExample4">
+						<div class="container-lg">
+							<div class="row d-flex align-items-center bg-dark">
+								<div class="col-md-1"></div>
+								<div class="col-md-4">
+									<p class="fw-semibold text-light lh-5 font-monospace fs-4">
+										The Ham & Cheesus
+										€9.95
+										Shredded Glazed ham, smoked cheddar, red cheddar. parmesan bechamel. colemans dressing. Served on granary sourdough with a side of crisps
+									</p>
+								</div>
+								<div class="col-md-1"></div>
+									<div class="col-md-6 px-0">
+										<img src="images/dinner.png" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+
+			<div class="container-lg py-5">
+				<div
+					class="row justify-content-md-center justify-content-sm-start my-5"
+				>
+					<div class="col-8">
+						<p class="text-md-center text-dark text-uppercase fw-bold fs-6">
+							<small>Our Special Menu</small>
+						</p>
+						<h1 class="fw-bold text-center lh-1 display-5 mb-4">
+							Explore Delicious Flavours
+						</h1>
+						<div class="col-12 d-flex">
+							<div class="col-md-2"><span></span></div>
+							<div class="col-6-md">
+								<div class="d-flex text-dark fw-semibold p-2">
+									<ul class="list-unstyled row">
+										<li class="d-flex align-items-center mt-5">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€5.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-2">
+
+									</ul>
+								</div>
+							</div>
+							<div class="col-6-md">
+								<div class="d-flex text-dark fw-semibold p-2">
+									<ul class="list-unstyled row">
+										<li class="d-flex align-items-center mt-5">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€5.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-3">
+
+										<li class="d-flex align-items-center mt-3">
+											<div class="list-item fw-bold">Smoked Potato Salad</div>
+											<div class="mx-5 price-box fw-bold text-lighter-red">€6.99</div>
+										</li>
+										<li class="my-3 fw-light">This is served with lentils and carrots with potato gratin and herbs</li>
+
+										<hr class="col-11 my-2">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid position-relative p-0">
+				<img src="images/halfSandwich.jpg" class="img-fluid" alt="" style="height: 75vh;"/>
+				<div class="row justify-content-center">
+					<div class="col-md-8 text-overlay">
+						<p class="text-center text-white display-4 fw-semibold">I Love Cooking For Myself And Cooking For My Family</p>
+						<p class="text-center text-white fs-6 fw-semibold mt-5">- AI Generator -</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-lg py-5">
+				<div class="row justify-content-md-center align-content-centre justify-content-sm-start my-5">
+					<div class="col-12">
+						<p class="text-md-center text-uppercase fw-semibold fs-5 text-success">
+							<small>Reviews</small>
+						</p>
+						<h1 class="fw-bold text-center lh-1 display-3">
+							Customer Say
+						</h1>
+					</div>
+					<div class="col-lg-6 col-md-12 mx-auto my-5">
+						<div class="col-md-4 mx-auto">
+							<img src="images/review1.png" class="img-fluid" alt="">
+						</div>
+						<div class="row my-5">
+							<div class="col-12 btn-group" role="group" aria-label="Basic mixed styles example">
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-10 mx-auto">
+							<p class="fs-1 fw-bold">Mr John Smith</p>
+							<p class="fs-4 fw-light text-success">Art Director</p>
+							<p class="my-4 fs-4">Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white wine sauce.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 mx-auto my-5">
+						<div class="col-md-4 mx-auto">
+							<img src="images/review2.png" class="img-fluid" alt="">
+						</div>
+						<div class="row my-5">
+							<div class="col-12 btn-group" role="group" aria-label="Basic mixed styles example">
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+								<button type="button" class="btn btn-outline-warning border-0">
+									<i class="bi bi-star-fill fs-3"></i>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-10 mx-auto">
+							<p class="fs-1 fw-bold">Mrs Johnson Smithwicks</p>
+							<p class="fs-4 fw-light text-success">Art Director</p>
+							<p class="my-4 fs-4">Delicious boneless, skinless chicken breasts and fresh mushrooms in garlic and white wine sauce. It was spectacular!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid bg-dark">
+				<footer class="row justify-content-center mt-5">
+					<div class="col-md-12 mb-2 mt-5">
+						<ul
+							class="list-unstyled text-center text-light fs-4 fw-semibold d-flex justify-content-center flex-wrap">
+							<li class="mx-3">Our Menu</li>
+							<li class="mx-3">Locations</li>
+							<li class="mx-3">Talk to us</li>
+						</ul>
+					</div>
+					<div class="col-md-12 mb-4">
+						<ul
+							class="list-unstyled text-center text-light fs-4 fw-semibold d-flex justify-content-center flex-wrap">
+							<li class="mx-3">What's New</li>
+							<li class="mx-3"><a href="index.html" class="text-warning text-decoration-none">Catering</a></li>
+							<li class="mx-3">Franchises</li>
+						</ul>
+					</div>
+					<div class="col-md-12 mb-5">
+						<ul class="list-unstyled text-center text-light fw-light d-flex justify-content-center flex-wrap">
+							<li class="mx-3">Cookie Policy</li>
+							<li class="mx-3">Privacy Policy</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-3 mb-5 pb-3">
+						<div class="d-flex justify-content-center">
+							<img src="images/footer-logo.png" alt="Footer Logo" class="img-fluid max-width-100 height-auto">
+						</div>
+					</div>
+				</footer>
+			</div>
+	
+
+
+					
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
