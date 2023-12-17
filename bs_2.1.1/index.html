@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>BS Navs + Grids + Containers</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container-fluid bg-dark text-light py-5">
+        <div class="container-md my-5">
+            <h1>Grids</h1>
+            <h3 class="lead">To use grids - we need to:</h3>
+            <!-- ol>li*3>p -->
+            <ol>
+                <li>
+                    <h5>Create A Row!</h5>
+                    <small>This is attached to a DIV. It's contents will flex-i.e. we use it to layout elements horizontally</small>
+                </li>
+                <li>
+                    <h5>Put Columns Inside Our Row</h5>
+                    <p>Our columns must add up to 12 since the BS grid is 12 columns wide.</p>
+                </li>
+                <li>
+                    <h5>Make Different Values For Our Grids</h5>
+                    <p>If we want to change layouts of our grids depending on our viewports, we can do this by referencing the correct classes!</p>
+                </li>
+            </ol>
+            <h5>Resources</h5>
+            <a href="https:getbootstrap.com/docs/5.3/layout/grid/">BS Grids</a>
+        </div>
+    </div>
+    <!-- .container-fluid.bg-primary.text-light.text-dark.py-5>.container-md.my-5>.row -->
+    <div class="container-fluid bg-body text-light text-dark py-5">
+        <div class="container-md my-5">
+            <div class="row">
+                <!-- .col-4-md.bg-danger.shadow.p-3.mb-5.bg-body.rounded*3>h3{Title}+p>lorem30 -->
+                <div class="col-lg-6 col-xl-4 p-3 mb-5">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestiae deleniti, modi similique sequi beatae saepe in cum sit. Voluptate sapiente provident odio quasi tenetur eum vel illo delectus ipsa.</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 p-3 mb-5">
+                    <h3>Title</h3>
+                    <p>Voluptas nostrum alias illum, placeat possimus at fuga rerum in, inventore adipisci consectetur eius corrupti quisquam quod sequi necessitatibus non ea tempore. Laborum nam, sapiente perspiciatis quis iusto quam doloribus!</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 p-3 mb-5">
+                    <h3>Title</h3>
+                    <p>Alias necessitatibus sed consequuntur! Cumque, velit illo! Rerum assumenda nostrum id velit nam, soluta hic dicta explicabo necessitatibus eligendi dolorum eveniet eaque tenetur excepturi illum, sit, minus enim. Hic, nulla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-warning text-light py-3">
+        <div class="container my-3">
+            <div class="row">
+                <!-- .col-lg-6.col-xl-4*3>.bg-success.p-4.mb-4>h4{Example}+ul.opacity-75>li*3>lorem10 -->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="bg-success p-4 mb-4">
+                        <h4>Example</h4>
+                        <ul class="opacity-75">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Consequatur deleniti voluptas repudiandae voluptate.</li>
+                            <li>Harum, blanditiis placeat? Veniam, atque.</li>
+                        </ul>
+                        <img src="images/img.1.avif" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="bg-success p-4 mb-4">
+                        <h4>Example</h4>
+                        <ul class="opacity-75">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Ex numquam corporis asperiores non.</li>
+                            <li>Autem doloremque impedit repellendus eaque.</li>
+                        </ul>
+                        <img src="images/img.2.avif" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="bg-success p-4 mb-4">
+                        <h4>Example</h4>
+                        <ul class="opacity-75">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Doloremque nulla sunt optio assumenda!</li>
+                            <li>Quam officiis tempore atque quae.</li>
+                        </ul>
+                        <img src="images/img.3.avif" class="img-fluid">
+                    </div>
+                </div>
+            </row>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
